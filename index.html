@@ -17,41 +17,42 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 <link rel="manifest" href="img/site.webmanifest">
-<style>
-    
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    padding:1rem 3.5rem;
-    margin-left: 10rem;
-    border-radius: 5rem;
-    background:var(--red);
-    color:#fff;
-    overflow: hidden;
-   
-    z-index: 0;
-    font-size: 1.7rem;
-}
 
-.btn::before{
-    content:'';
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background:rgb(27, 27, 27);
-    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
-    transition:.3s linear;
-}
 
-.btn:hover::before{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
 
-</style>
 </head>
 
+
+<style>
+    .btn{
+        display: inline-block;
+        margin-top: 1rem;
+        padding:1rem 4rem;
+        border-radius: 5rem;
+        background:var(--red);
+        color:#fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        font-size: 1.7rem;
+    }
+    
+    .btn::before{
+        content:'';
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background:#444;
+        clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+        transition:.3s linear;
+    }
+    
+    .btn:hover::before{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    </style>
 
 <body>
     
@@ -69,8 +70,9 @@
             <li><a href="#protect">protect</a></li>
             <li><a href="#symtoms">symtoms</a></li>
             <li><a href="#prevent">prevent</a></li>
-            <li><a href="#handwash">handwash</a></li>
+            
             <li><a href="#spread">spread</a></li>
+            <li><a href="post covid care.html">Post Covid Care</a></li>
             
         </ul>
     </nav>
@@ -111,11 +113,11 @@
 
         <section class=home id="home">
             <div class="inner-width">
-            <h1 class="section-title">Tracking Covid Situation</h1>
+            <h1 class="section-title" style="font-size: xx-large;">Tracking Covid Situation</h1>
             <div class="about-content">
                 <img src="images/covid_track-removebg.png" alt="" class="about-pic">
                 <div class="about-text">
-                <h2>You can easily track covid 19 by clicking bellow:-</h2>
+                <h2 style="font-size: xx-large;" style="color: red;">You can easily track covid 19 by clicking bellow:-</h2>
                 <h3>
                     <span><img class="gov" src="/images/ind gov.svg"><a href="https://www.mygov.in/covid-19" target="_blank" >Government Site</a></span>
                     <span><img class="gov" src="/images/ind flag.jpg"><a href="https://www.covid19india.org/" target="_blank"> Indian Tracker</a>   </span>
@@ -359,6 +361,33 @@
 
 <!-- spread section ends -->
 
+<!-- Time line -->
+
+
+<div class="inner-width">
+    <h1 class="section-title">6 Must-Do’s Post COVID-19 Recovery!</h1>
+    <div class="about-content">
+      <img src="images/white C.jpg" alt="" class="about-pic">
+      <div class="about-text">
+        <h2>The need of covid care.</h2>
+        <h3>
+
+      </h3>
+        <p>
+          Recovering from COVID usually takes around 2 weeks (for mild cases) and about a month for people with a serious infection. But COVID has an excellent recovery rate in India right now which is above 90%. That is why most people who contract this viral infection recover soon and slowly get back to their old lifestyle.
+
+          If you or someone you know got infected and recovered, congratulations! But remember, even though the virus is no longer in your body, you still need to be cautious about what you do in the next few days. Here is a complete guide to post-COVID care.
+        </p>
+      </div>
+      <a href="post covid care.html" class="btn" >Read more</a>
+    </div>
+
+    
+  </div>
+
+
+</section>
+<br>
 <!-- footer section starts  -->
 
 <section class="footer">
@@ -366,19 +395,18 @@
     <div class="box-container">
 
         <div class="box">
-            <h3>about us</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio rerum explicabo impedit aperiam non quod. Velit sunt voluptatem nemo beatae.</p>
+            <h3>About ME</h3>
+            <p>It would be my pleasure to help you out during this pandemic situation.</p>
         </div>
 
         <div class="box">
-            <h3>locations</h3>
-            <a href="#">india</a>
-            <a href="#">USA</a>
-            <a href="#">russia</a>
-            <a href="#">japan</a>
-            <a href="#">france</a>
-            <a href="#">africa</a>
-            <a href="#">spain</a>
+            <a href="https://www.covid19india.org/">india</a>
+            <a href="https://www.worldometers.info/coronavirus/">USA</a>
+            <a href="https://www.worldometers.info/coronavirus/">russia</a>
+            <a href="https://www.worldometers.info/coronavirus/">japan</a>
+            <a href="https://www.worldometers.info/coronavirus/">france</a>
+            <a href="https://www.worldometers.info/coronavirus/">africa</a>
+            <a href="https://www.worldometers.info/coronavirus/">spain</a>
         </div>
 
         <div class="box">
@@ -393,14 +421,17 @@
 
         <div class="box">
             <h3>contact info</h3>
-            <p> <i class="fas fa-phone"></i> +123-456-7890. </p>
-            <p> <i class="fas fa-envelope"></i> example@gmail.com </p>
-            <p> <i class="fas fa-map-marker-alt"></i> mumbai, indai - 400104. </p>
+            <p> <i class="fas fa-phone"></i> +91  ____________   </p>
+            <p> <i class="fas fa-envelope"></i> Siddhantrajhans@gmail.com </p>
+            <p> <i class="fas fa-map-marker-alt"></i> Dehradun, Uttarakhand </p>
             <div class="share">
-                <a href="#" class="fab fa-youtube"></a>
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
+                
+               <ul class="menu simple"></ul>
+                <spam><a href="https://www.facebook.com/"> <img class="gov" src="/Assets/icons/facebook-app.png"></a></spam>
+                <spam><a href="https://www.instagram.com/"><img  class="gov"    src="/Assets/icons/ig-instagram.png"></a></spam>
+                <spam><a href="https://www.github.com/"><img  class="icon"   src="/Assets/icons/github.png"></a></spam> 
+                <spam><a href="https://linkedin.com"> <img class="gov"  src="/Assets/icons/linkedin-app.png"></a></spam>
+              </ul>
             </div>
         </div>
 
