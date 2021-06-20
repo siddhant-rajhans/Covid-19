@@ -17,6 +17,39 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 <link rel="manifest" href="img/site.webmanifest">
+<style>
+    
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:1rem 3.5rem;
+    margin-left: 10rem;
+    border-radius: 5rem;
+    background:var(--red);
+    color:#fff;
+    overflow: hidden;
+   
+    z-index: 0;
+    font-size: 1.7rem;
+}
+
+.btn::before{
+    content:'';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background:rgb(27, 27, 27);
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    transition:.3s linear;
+}
+
+.btn:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+</style>
 </head>
 
 
